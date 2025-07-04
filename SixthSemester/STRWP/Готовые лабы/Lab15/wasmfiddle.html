@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    async function loadWASM() {
+      const wasmCode =
+          'AGFzbQEAAAABJQdgA39/fwF/YAN/fn8BfmAAAGACf38Bf2ABfwBgAX8Bf2AAAX8DExICAwMDBAUG\n' +
+          'BAQGAgUEBQIGBgYEBQFwAQEBBQYBAYICggIGEgN/AUGAgAQLfwFBAAt/AUEACweVAg4GbWVtb3J5\n' +
+          'AgARX193YXNtX2NhbGxfY3RvcnMAAANzdW0AAQNtdWwAAgNzdWIAAwZmZmx1c2gADRVlbXNjcmlw\n' +
+          'dGVuX3N0YWNrX2luaXQADhllbXNjcmlwdGVuX3N0YWNrX2dldF9mcmVlAA8ZZW1zY3JpcHRlbl9z\n' +
+          'dGFja19nZXRfYmFzZQAQGGVtc2NyaXB0ZW5fc3RhY2tfZ2V0X2VuZAARGV9lbXNjcmlwdGVuX3N0\n' +
+          'YWNrX3Jlc3RvcmUABBdfZW1zY3JpcHRlbl9zdGFja19hbGxvYwAFHGVtc2NyaXB0ZW5fc3RhY2tf\n' +
+          'Z2V0X2N1cnJlbnQABhlfX2luZGlyZWN0X2Z1bmN0aW9uX3RhYmxlAQAK4QUSBAAQDgs9AQZ/I4CA\n' +
+          'gIAAIQJBECEDIAIgA2shBCAEIAA2AgwgBCABNgIIIAQoAgwhBSAEKAIIIQYgBSAGaiEHIAcPCz0B\n' +
+          'Bn8jgICAgAAhAkEQIQMgAiADayEEIAQgADYCDCAEIAE2AgggBCgCDCEFIAQoAgghBiAFIAZsIQcg\n' +
+          'Bw8LPQEGfyOAgICAACECQRAhAyACIANrIQQgBCAANgIMIAQgATYCCCAEKAIMIQUgBCgCCCEGIAUg\n' +
+          'BmshByAHDwsKACAAJICAgIAACxoBAn8jgICAgAAgAGtBcHEiASSAgICAACABCwgAI4CAgIAACwIA\n' +
+          'CwIACxQAQYCAhIAAEIeAgIAAQYSAhIAACw4AQYCAhIAAEIiAgIAACwQAQQELAgAL+wIBA38CQCAA\n' +
+          'DQBBACEBAkBBACgCiICEgABFDQBBACgCiICEgAAQjYCAgAAhAQsCQEEAKAKIgISAAEUNAEEAKAKI\n' +
+          'gISAABCNgICAACABciEBCwJAEImAgIAAKAIAIgBFDQADQAJAAkAgACgCTEEATg0AQQEhAgwBCyAA\n' +
+          'EIuAgIAARSECCwJAIAAoAhQgACgCHEYNACAAEI2AgIAAIAFyIQELAkAgAg0AIAAQjICAgAALIAAo\n' +
+          'AjgiAA0ACwsQioCAgAAgAQ8LAkACQCAAKAJMQQBODQBBASECDAELIAAQi4CAgABFIQILAkACQAJA\n' +
+          'IAAoAhQgACgCHEYNACAAQQBBACAAKAIkEYCAgIAAgICAgAAaIAAoAhQNAEF/IQEgAkUNAQwCCwJA\n' +
+          'IAAoAgQiASAAKAIIIgNGDQAgACABIANrrEEBIAAoAigRgYCAgACAgICAABoLQQAhASAAQQA2Ahwg\n' +
+          'AEIANwMQIABCADcCBCACDQELIAAQjICAgAALIAELIABBgICEgAAkgoCAgABBgICAgABBD2pBcHEk\n' +
+          'gYCAgAALDwAjgICAgAAjgYCAgABrCwgAI4KAgIAACwgAI4GAgIAACwCUAQ90YXJnZXRfZmVhdHVy\n' +
+          'ZXMIKwtidWxrLW1lbW9yeSsPYnVsay1tZW1vcnktb3B0KxZjYWxsLWluZGlyZWN0LW92ZXJsb25n\n' +
+          'KwptdWx0aXZhbHVlKw9tdXRhYmxlLWdsb2JhbHMrE25vbnRyYXBwaW5nLWZwdG9pbnQrD3JlZmVy\n' +
+          'ZW5jZS10eXBlcysIc2lnbi1leHQ=\n'
+
+      const wasmBinary = Uint8Array.from(atob(wasmCode), c => c.charCodeAt(0));
+
+      const wasiImports = {
+        "wasi_snapshot_preview1": {
+          "args_get": () => {},
+          "args_sizes_get": () => {},
+          "proc_exit": () => {},
+        }
+      };
+
+      WebAssembly.instantiate(wasmBinary.buffer, wasiImports).then(wasmModule => {
+        const { sum, mul, sub } = wasmModule.instance.exports;
+
+        console.log("sum(5,3) =", sum(5,3));
+        console.log("mul(5,3) =", mul(5,3));
+        console.log("sub(5,3) =", sub(5,3));
+      });
+    }
+    loadWASM();
+</script>
+</body>
+</html>
+

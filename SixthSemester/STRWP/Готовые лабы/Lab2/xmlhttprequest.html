@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    <h1 id = 'myId'>Last Name, First Name and Patronymic: </h1>
+</body>
+<script>
+    let element = document.getElementById('myId');
+    let request = new XMLHttpRequest();
+    request.open('GET', 'http://localhost:5000/api/name', true);
+    request.onreadystatechange = function() {    
+        if (request.readyState === 4 && request.status === 200) {
+            element.append(request.responseText);
+        }
+    };
+    request.send();
+</script>
+</html>

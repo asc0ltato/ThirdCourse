@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Безымянный – Блокнот",
+  "Type": "Screen",
+  "Id": "f6-ams6wbUi-0svuKLp62Q",
+  "Reference": "yIP_MVRLc0CQLe7kjy3Upw/f6-ams6wbUi-0svuKLp62Q",
+  "ParentRef": "yIP_MVRLc0CQLe7kjy3Upw/f2WaEg7xr0KgsXR2Vh3Rvg",
+  "Created": "2024-09-14T07:08:22.7316878Z",
+  "Updated": "2024-09-14T07:08:22.7316878Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

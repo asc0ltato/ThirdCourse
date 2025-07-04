@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>03-03</title>
+</head>
+<body>
+    <div id='result'></div>
+    <script>
+        const startTime = Date.now();
+        const result = document.getElementById('result');
+        let time = 0;
+        let n = 0;
+
+        const fetchFactorial = async () => {
+            for (let x = 0; x <= 20; x++) {
+                const response = await fetch(`/fact?k=${x}`, {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+                });
+
+                const data = await response.json();
+                const elapsedTime = Date.now() - startTime;
+                result.innerHTML += `${n++}. Результат: ${elapsedTime}-${data.k}/${data.fact}<br/>`;
+                time = elapsedTime;
+
+                if (n === 21) {
+                    result.innerHTML += `Общее время: ${time} мс`;
+                }
+            }
+        }
+
+        window.onload = fetchFactorial;
+    </script>
+</body>
+</html>

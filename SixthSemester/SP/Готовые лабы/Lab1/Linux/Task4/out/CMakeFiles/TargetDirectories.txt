@@ -1,0 +1,3 @@
+/home/sveta/Task4/out/CMakeFiles/Lab-01C.dir
+/home/sveta/Task4/out/CMakeFiles/edit_cache.dir
+/home/sveta/Task4/out/CMakeFiles/rebuild_cache.dir

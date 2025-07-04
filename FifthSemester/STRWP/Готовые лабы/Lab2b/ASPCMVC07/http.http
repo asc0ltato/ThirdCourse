@@ -1,0 +1,29 @@
+#GET:M04
+GET https://localhost:7283/it/5/pim
+###
+GET https://localhost:7283/it/5.3/pim
+###
+
+#GET:M05
+#POST:M05
+GET https://localhost:7283/it/true/pim
+###
+POST https://localhost:7283/it/false/pim123
+###
+
+
+#GET:M06
+#DELETE:M06
+GET https://localhost:7283/it/3.14/pick
+###
+DELETE https://localhost:7283/it/3.4/pickme
+###
+
+#PUT:M07
+PUT https://localhost:7283/it/pick/150
+###
+PUT https://localhost:7283/it/pickme/150
+###
+
+#POST:M08
+POST https://localhost:7283/it/superpando4ka@gmail.com

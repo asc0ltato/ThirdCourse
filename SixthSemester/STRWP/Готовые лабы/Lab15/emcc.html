@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  async function loadWasm() {
+    const response = await fetch("a.out.wasm");
+    const buffer = await response.arrayBuffer();
+
+    const wasiImports = {
+      "wasi_snapshot_preview1": {
+        "args_get": () => {},
+        "args_sizes_get": () => {},
+        "proc_exit": () => {},
+      }
+    };
+
+    const wasmModule = await WebAssembly.instantiate(buffer, wasiImports);
+
+    const { sum, mul, sub } = wasmModule.instance.exports;
+
+    console.log("sum(5,3) =", sum(5,3));
+    console.log("mul(5,3) =", mul(5,3));
+    console.log("sub(5,3) =", sub(5,3));
+  }
+
+  loadWasm();
+</script>
+</body>
+</html>

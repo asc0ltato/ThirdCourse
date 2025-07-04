@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>Калькулятор</h1>
+    <form id="calculatorForm" method="post" action="/calcul">
+        <input type="number" name="X" placeholder="Введите X" required>
+        <input type="number" name="Y" placeholder="Введите Y" required>
+        <button type="submit" onclick='multiply()'>Вычислить</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function multiply() {
+            var x = document.getElementById('X').value;
+            var y = document.getElementById('Y').value;
+
+            var formData = new FormData();
+            formData.append('X', x);
+            formData.append('Y', y);
+    </script>
+</body>
+</html>

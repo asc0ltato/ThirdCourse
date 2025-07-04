@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\build\ComSampleProxy\Generated\IComTest_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\build\ComSampleProxy\Generated\IComTest_p.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\build\ComSampleProxy\Generated\dlldata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\build\CMakeFiles\a9d30faa0511dc506acf971ea73ce314\IComTest_i.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleProxy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B92D9494-F4A6-3EFF-822C-0F02CF9DC90D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{407807B6-0F60-38AB-8B51-A159450E8E9A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

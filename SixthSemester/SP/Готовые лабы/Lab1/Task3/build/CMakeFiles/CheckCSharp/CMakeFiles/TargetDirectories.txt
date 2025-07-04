@@ -1,0 +1,2 @@
+C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/ALL_BUILD.dir
+C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/ZERO_CHECK.dir

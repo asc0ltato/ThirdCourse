@@ -1,0 +1,4 @@
+C:/Users/ascoltat0/Desktop/Lab5/cmake/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ascoltat0/Desktop/Lab5/cmake/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ascoltat0/Desktop/Lab5/cmake/build/DemoService/CMakeFiles/DemoService.dir
+C:/Users/ascoltat0/Desktop/Lab5/cmake/build/ServiceCtl/CMakeFiles/ServiceCtl.dir

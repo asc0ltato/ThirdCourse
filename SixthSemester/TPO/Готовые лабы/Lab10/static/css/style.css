@@ -1,0 +1,88 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9; /* Softer light background */
+    color: #444; /* Slightly lighter text color for readability */
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2c3e50; /* Darker color for a stronger heading */
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Adding uppercase for emphasis */
+}
+
+/* Content Section */
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adding max-width to limit content width */
+}
+
+/* Links */
+a {
+    color: #2980b9; /* Richer blue for links */
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 500; /* Slightly bolder link text */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db; /* Lighter blue on hover */
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #3498db; /* Stylish blue button */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+button:active {
+    background-color: #1f6f9a; /* Even darker blue when clicked */
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 600px; /* Max width set to 600px */
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners for videos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for videos */
+}

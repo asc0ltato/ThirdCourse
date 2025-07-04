@@ -1,0 +1,8 @@
+{
+  "servers": [
+    "tss1:5555",
+    "tss2:5555",
+    "tss3:5555"
+  ],
+  "coordinator": "tss1:5555"
+}

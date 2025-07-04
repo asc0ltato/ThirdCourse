@@ -1,0 +1,111 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineCSharpCompiler.cmake:23 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CSharp compiler identification source file "CMakeCSharpCompilerId.cs" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.9+e0f243f1e ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 24.02.2025 11:46:39.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\CompilerIdCSharp.csproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "obj\\x64\\Debug\\".
+      CoreCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\csc.exe /noconfig /nowarn:1701,1702 /fullpaths /nostdlib+ /platform:anycpu32bitpreferred /define:Platformx64;PlatformToolsetClangCL /highentropyva+ /reference:"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll" /reference:"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll" /debug+ /out:obj\\x64\\Debug\\CompilerIdCSharp.exe /subsystemversion:6.00 /target:exe /utf8output /langversion:7.3 CMakeCSharpCompilerId.cs "obj\\x64\\Debug\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+        CompilerServer: server - server processed compilation - CompilerIdCSharp
+      CopyFilesToOutputDirectory:
+        ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\obj\\x64\\Debug\\CompilerIdCSharp.exe" ╨▓ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\CompilerIdCSharp.exe".
+        CompilerIdCSharp -> C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\CompilerIdCSharp.exe
+        ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\obj\\x64\\Debug\\CompilerIdCSharp.pdb" ╨▓ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\CompilerIdCSharp.pdb".
+      PostBuildEvent:
+        if not "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn"=="" if exist "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\csc.exe" set _CSC=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn
+        if exist "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\csc.exe" set _CSC=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64
+        if "%_CSC%"=="" exit -1
+        @echo CMAKE_CSharp_COMPILER=%_CSC%\\csc.exe
+        CMAKE_CSharp_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\csc.exe
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\3.30.5-msvc23\\CompilerIdCSharp\\CompilerIdCSharp.csproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.75
+      
+      
+      Compilation of the CSharp compiler identification source "CMakeCSharpCompilerId.cs" produced "CompilerIdCSharp.csproj"
+      
+      Compilation of the CSharp compiler identification source "CMakeCSharpCompilerId.cs" produced "CompilerIdCSharp.exe"
+      
+      Compilation of the CSharp compiler identification source "CMakeCSharpCompilerId.cs" produced "CompilerIdCSharp.pdb"
+      
+      The CSharp compiler identification could not be found in:
+        C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/3.30.5-msvc23/CompilerIdCSharp/CompilerIdCSharp.csproj
+      
+      The CSharp compiler identification is Microsoft unknown, found in:
+        C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/3.30.5-msvc23/CompilerIdCSharp/CompilerIdCSharp.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeTestCSharpCompiler.cmake:34 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working C# compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/csc.exe"
+    directories:
+      source: "C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/CMakeScratch/TryCompile-actf18"
+      binary: "C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/CMakeScratch/TryCompile-actf18"
+    cmakeVariables:
+      CMAKE_CSharp_FLAGS: "/platform:x64 /define:TRACE"
+      CMAKE_CSharp_FLAGS_DEBUG: "/debug:full /optimize- /warn:3 /errorreport:prompt /define:DEBUG"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: ""
+    buildResult:
+      variable: "CMAKE_CSharp_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ascoltat0/Desktop/Lab1/Task3/build/CMakeFiles/CheckCSharp/CMakeFiles/CMakeScratch/TryCompile-actf18'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_636dc.csproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.9+e0f243f1e ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 24.02.2025 11:46:41.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\cmTC_636dc.csproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "obj\\x64\\Debug\\".
+        CoreCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\Roslyn\\csc.exe /noconfig /nowarn:1701,1702 /fullpaths /nostdlib+ /platform:x64 /errorreport:prompt /warn:3 /define:TRACE;DEBUG /highentropyva+ /reference:"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll" /reference:"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll" /debug+ /debug:full /optimize- /out:obj\\x64\\Debug\\cmTC_636dc.exe /subsystemversion:6.00 /target:exe /utf8output /langversion:7.3 C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\testCSharpCompiler.cs "obj\\x64\\Debug\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+          CompilerServer: server - server processed compilation - cmTC_636dc
+        CopyFilesToOutputDirectory:
+          ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\obj\\x64\\Debug\\cmTC_636dc.exe" ╨▓ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\Debug\\cmTC_636dc.exe".
+          cmTC_636dc -> C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\Debug\\cmTC_636dc.exe
+          ╨Ъ╨╛╨┐╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╤Д╨░╨╣╨╗╨░ ╨╕╨╖ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\obj\\x64\\Debug\\cmTC_636dc.pdb" ╨▓ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\Debug\\cmTC_636dc.pdb".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\ascoltat0\\Desktop\\Lab1\\Task3\\build\\CMakeFiles\\CheckCSharp\\CMakeFiles\\CMakeScratch\\TryCompile-actf18\\cmTC_636dc.csproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.36
+        
+      exitCode: 0
+...

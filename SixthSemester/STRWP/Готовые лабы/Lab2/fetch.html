@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    <h1 id = 'myId'>Last Name, First Name and Patronymic: </h1>
+</body>
+<script>
+    let element = document.getElementById('myId');
+
+    async function fetchName () {
+        let response = await fetch('/api/name');
+        let data = await response.text();
+        element.append(data);
+    }
+
+    fetchName();
+    // fetch('/api/name').then(response => response.text()).then(data => element.append(data));
+</script>
+</html>

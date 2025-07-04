@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>Dasha Kakasha</name>
+    <age>20</age>
+    <email>ssjjitt@gmail.com</email>
+    <address>
+        <city>Minsk</city>
+        <street>Bobruisk, 25, 319</street>
+    </address>
+    <phoneNumber>+375 29 704 19 54</phoneNumber>
+</person>

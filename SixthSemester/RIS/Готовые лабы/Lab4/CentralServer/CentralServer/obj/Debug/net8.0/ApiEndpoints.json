@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "CentralServer.Controllers.CentralTelemetryController",
+    "Method": "GetAllTelemetry",
+    "RelativePath": "CentralTelemetry/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CentralServer.Controllers.CentralTelemetryController",
+    "Method": "GetSourcesStatus",
+    "RelativePath": "CentralTelemetry/sources/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CentralServer.Controllers.CentralTelemetryController",
+    "Method": "GetTimeCorrection",
+    "RelativePath": "CentralTelemetry/sync-time",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CentralServer.Controllers.GetSinchroRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

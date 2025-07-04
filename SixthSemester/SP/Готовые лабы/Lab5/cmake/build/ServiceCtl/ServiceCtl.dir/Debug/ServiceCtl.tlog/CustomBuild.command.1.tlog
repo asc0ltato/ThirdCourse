@@ -1,0 +1,10 @@
+^C:\USERS\ASCOLTAT0\DESKTOP\LAB5\CMAKE\SERVICECTL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ascoltat0/Desktop/Lab5/cmake -BC:/Users/ascoltat0/Desktop/Lab5/cmake/build --check-stamp-file C:/Users/ascoltat0/Desktop/Lab5/cmake/build/ServiceCtl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

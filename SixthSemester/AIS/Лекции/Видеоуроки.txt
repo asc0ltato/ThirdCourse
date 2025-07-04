@@ -1,0 +1,11 @@
+2. Видеоурок про Linux и сеть
+https://www.youtube.com/watch?v=pBcerifwvek&list=PLrCZzMib1e9rx3HmaLQfLYb9ociIvYOY1&index=5
+
+7. Видеоурок про веб-сервисы в Linux
+https://www.youtube.com/watch?v=cvjMNjY2gz0&list=PLrCZzMib1e9rx3HmaLQfLYb9ociIvYOY1&index=6
+
+10. ERP-система Odoo - запись лекции
+https://www.youtube.com/watch?v=1wHXjHUqUT0
+
+18. Видеоурок по установке Active Directory
+https://www.youtube.com/watch?v=hAyM1RCiCHM&list=PLn4SK-2CJPAE_Tffihw_HksmZO89iXC7X&index=3

@@ -1,0 +1,1 @@
+/usr/bin/clang CMakeFiles/demoserviced.dir/demoserviced.c.o CMakeFiles/demoserviced.dir/ini.c.o -o ../bin/demoserviced

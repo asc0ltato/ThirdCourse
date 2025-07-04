@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  tss1:
+    build: .
+    container_name: tss1
+    environment:
+      - MY_ADDR=tss1:5555
+    volumes:
+      - ./config:/app/config
+    ports:
+      - "5551:5555/udp"
+    command: ["/app/tss"]
+    depends_on:
+      - tss2
+      - tss3
+
+  tss2:
+    build: .
+    container_name: tss2
+    environment:
+      - MY_ADDR=tss2:5555
+    volumes:
+      - ./config:/app/config
+    ports:
+      - "5552:5555/udp"
+    command: ["/app/tss"]
+    depends_on:
+      - tss3
+
+  tss3:
+    build: .
+    container_name: tss3
+    environment:
+      - MY_ADDR=tss3:5555
+    volumes:
+      - ./config:/app/config
+    ports:
+      - "5553:5555/udp"
+    command: ["/app/tss"]
+
+  mediator:
+    build: .
+    container_name: mediator
+    ports:
+      - "5555:5555/udp"
+    volumes:
+      - ./config:/app/config
+    command: ["/app/mediator"]
+    depends_on:
+      - tss1
+      - tss2
+      - tss3

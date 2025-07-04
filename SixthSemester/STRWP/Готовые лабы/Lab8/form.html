@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+    * {
+      color: #011627;
+      background-color: #f5f5f5;
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #status {
+      margin: auto;
+      margin-top: 10px;
+      padding: 10px;
+      width: fit-content;
+      border-radius: 10px;
+      border: 3px solid #8980f5;
+      text-align: center;
+      display: none;
+      padding: 10px 20px;
+      max-width: 600px;
+    }
+    .row {
+      margin-bottom: 20px;
+    }
+    input[type="submit"] {
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+  <h1>08-09</h1>
+  <form action="http://localhost:5000/formparameter" method="POST">
+    <div class="row">
+      <label>text:</label><br>
+      <input type="text" name="txt" required/>
+    </div>
+    <div class="row">
+      <label>number:</label><br>
+      <input type="number" name="num" required/>
+    </div>
+
+    <div class="row">
+      <label>date:</label><br>
+      <input type="date" name="date" required/>
+    </div>
+
+    <div class="row">
+      <label>checkbox:</label><br>
+      <input type="checkbox" name="check" value="1"/>
+    </div>
+
+    <div class="row">
+      <label>radiobutton:</label><br>
+      <input type="radio" name="radio" value="1">
+    </div>
+
+    <div class="row">
+      <label>textarea:</label><br>
+      <textarea name="textarea" rows="4" cols="50" required></textarea>
+    </div>
+
+    <div>
+      <input type="submit" name="btn1" value="submit 1"/>
+      <input type="submit" name="btn1" value="submit 2"/>
+    </div>
+  </form>
+</body>
+</html>

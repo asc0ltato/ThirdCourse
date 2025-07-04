@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleService\ClassFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleService\CComServiceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleService\Register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleService\Service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleService\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ascoltat0\Desktop\Lab4\COM+CMake\ComSampleService\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{407807B6-0F60-38AB-8B51-A159450E8E9A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

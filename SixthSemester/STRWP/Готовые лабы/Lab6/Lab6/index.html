@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка Email</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7c7c, #ff99cc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-wrapper {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .form-wrapper:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #e91e63;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #e91e63;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: left;
+            width: 100%;
+        }
+
+        input[type="email"],
+        textarea {
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #e91e63;
+            border-radius: 8px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #f50057;
+            box-shadow: 0 0 8px rgba(245, 0, 87, 0.3);
+        }
+
+        .submit-btn {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #c2185b;
+            transform: scale(1.05);
+        }
+
+        .submit-btn:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+<div class="form-wrapper">
+    <h2>Отправить email</h2>
+    <form action="/" method="post">
+        <label for="from">Отправитель:</label>
+        <input type="email" id="from" name="from" placeholder="Введите ваш email">
+
+        <label for="to">Получатель:</label>
+        <input type="email" id="to" name="to" placeholder="Введите email получателя">
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" placeholder="Введите текст сообщения"></textarea>
+
+        <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+</div>
+</body>
+</html>

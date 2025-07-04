@@ -1,0 +1,5 @@
+/home/sveta/Task3/out/linuxBuild/CMakeFiles/edit_cache.dir
+/home/sveta/Task3/out/linuxBuild/CMakeFiles/rebuild_cache.dir
+/home/sveta/Task3/out/linuxBuild/C-Project/CMakeFiles/Lab-01C.dir
+/home/sveta/Task3/out/linuxBuild/C-Project/CMakeFiles/edit_cache.dir
+/home/sveta/Task3/out/linuxBuild/C-Project/CMakeFiles/rebuild_cache.dir

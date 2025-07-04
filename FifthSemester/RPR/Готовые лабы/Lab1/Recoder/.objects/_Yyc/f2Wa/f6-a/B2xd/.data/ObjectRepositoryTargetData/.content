@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LlwChKDlaUqBsRUDwWzamQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7c894116-761c-421d-a931-f2ba14ac80d1" CvTextArea="43, 35, 58, 16" CvTextArgument="WlpnOT..." CvType="Text" DesignTimeRectangle="3, 29, 245, 26" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;ctrl name='Формат' role='popup menu' /&gt;&lt;ctrl automationid='33' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Формат' role='popup menu' /&gt;&lt;ctrl automationid='33' role='menu item' check:text='Шрифт...' /&gt;" Guid="28077817-eebf-434e-8ead-d0376df65afb" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3a3a845fe04929140e2a56c70d75c1bf.png" xmlns="">08GXPIHpkzU-wIcRAz2hEbA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

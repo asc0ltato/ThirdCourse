@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgb(255, 0, 0);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: red;
+            }
+
+        #messages {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WebSocket</h1>
+        <button id="start" onclick="start()">Пуск</button>
+        <button id="stop" onclick="stop()">Стоп</button>
+        <div id="messages"></div>
+    </div>
+    <div style="margin:40px;">
+        <button id="clear">Очистить</button>
+    </div>
+    <script>
+        var socket = null;
+
+        const start = () => {
+            if (!socket || socket.readyState !== WebSocket.OPEN) {
+                socket = new WebSocket("wss://localhost:7092/ws");
+
+                socket.onopen = () => {
+                    const messages = document.getElementById('messages');
+                    messages.innerHTML += "Соединение установлено.<br />";
+                };
+
+                socket.onmessage = (event) => {
+                    const messages = document.getElementById('messages');
+                    messages.innerHTML += event.data + '<br />';
+                    messages.scrollTop = messages.scrollHeight;
+                };
+
+                socket.onerror = (error) => {
+                    const messages = document.getElementById('messages');
+                    messages.innerHTML += `Ошибка: ${error.message}<br />`;
+                };
+
+                socket.onclose = () => {
+                    const messages = document.getElementById('messages');
+                    messages.innerHTML += "Соединение закрыто.<br />";
+                };
+            }
+        };
+
+        const stop = () => {
+            if (socket) {
+                const messages = document.getElementById('messages');
+                messages.innerHTML += "Соединение разорвано.<br />";
+                socket.close();
+                socket = null;
+            }
+        };
+
+        clear.addEventListener('click', function () {
+            ta = document.getElementById('messages');
+            ta.innerHTML = "";
+        })
+    </script>
+</body>
+</html>

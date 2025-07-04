@@ -1,0 +1,8 @@
+C:/Users/ascoltat0/Desktop/Lab3/out/CMakeFiles/ALL_BUILD.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/ZSSLib/src/CMakeFiles/ZSSLib.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/Lab-03a/src/CMakeFiles/Lab-03a.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/ZSSDLib/src/CMakeFiles/ZSSDLib.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/ZSSDLib++/src/CMakeFiles/ZSSDLib++.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/Lab-03b-ex/src/CMakeFiles/Lab-03b-ex.dir
+C:/Users/ascoltat0/Desktop/Lab3/out/Lab-03b-im/src/CMakeFiles/Lab-03b-im.dir

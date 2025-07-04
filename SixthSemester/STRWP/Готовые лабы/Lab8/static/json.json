@@ -1,0 +1,10 @@
+{
+  "name": "Dasha Kakasha",
+  "age": 20,
+  "email": "ssjjitt@gmail.com",
+  "address": {
+    "city": "Minsk",
+    "street": "Bobruisk, 25, 319"
+  },
+  "phoneNumber": "+375 29 704 19 54"
+}

@@ -1,0 +1,14 @@
+/home/sveta/Task2/Lab-01CS/bin/Debug/net8.0/Lab-01CS
+/home/sveta/Task2/Lab-01CS/bin/Debug/net8.0/Lab-01CS.deps.json
+/home/sveta/Task2/Lab-01CS/bin/Debug/net8.0/Lab-01CS.runtimeconfig.json
+/home/sveta/Task2/Lab-01CS/bin/Debug/net8.0/Lab-01CS.dll
+/home/sveta/Task2/Lab-01CS/bin/Debug/net8.0/Lab-01CS.pdb
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.GeneratedMSBuildEditorConfig.editorconfig
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.AssemblyInfoInputs.cache
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.AssemblyInfo.cs
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.csproj.CoreCompileInputs.cache
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.dll
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/refint/Lab-01CS.dll
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.pdb
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/Lab-01CS.genruntimeconfig.cache
+/home/sveta/Task2/Lab-01CS/obj/Debug/net8.0/ref/Lab-01CS.dll

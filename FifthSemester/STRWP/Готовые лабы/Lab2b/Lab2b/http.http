@@ -1,0 +1,36 @@
+#GET:MO1
+GET http://localhost:5081/TMResearch/M01/1
+###
+GET http://localhost:5081/TMResearch/M01
+###
+GET http://localhost:5081/TMResearch/
+###
+GET http://localhost:5081/
+###
+GET http://localhost:5081/V2/TMResearch/M01
+###
+GET http://localhost:5081/V3/TMResearch/string/M01
+###
+
+#GET:MO2
+GET http://localhost:5081/V2
+###
+GET http://localhost:5081/V2/TMResearch
+###
+GET http://localhost:5081/V2/TMResearch/M02
+###
+GET http://localhost:5081/TMResearch/M02
+###
+GET http://localhost:5081/V3/TMResearch/string/M02
+###
+
+#GET:M03
+GET http://localhost:5081/V3
+###
+GET http://localhost:5081/V3/TMResearch/string/
+###
+GET http://localhost:5081/V3/TMResearch/string/M03
+###
+
+#GET:MXX
+GET http://localhost:5081/pickme

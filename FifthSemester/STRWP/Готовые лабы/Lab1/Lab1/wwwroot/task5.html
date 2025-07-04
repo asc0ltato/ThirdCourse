@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>Калькулятор</h1>
+    <input type="number" id="x" placeholder="Введите x">
+    <input type="number" id="y" placeholder="Введите y">
+    <button id="calculate">Вычислить</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('calculate').onclick = function() {
+            var x = document.getElementById('x').value;
+            var y = document.getElementById('y').value;
+            var xhr = new XMLHttpRequest();
+            var data = "X=" + x + "&Y=" + y;
+
+            xhr.open('POST', '/calculate');
+            xhr.setRequestHeader('Content-Type', 'application/form-data');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById('result').innerText = 'Результат: ' + xhr.responseText;
+                } else {
+                    document.getElementById('result').innerText = 'Ошибка: ' + xhr.responseText;
+                }
+            };
+            xhr.send(data);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/mnt/c/Users/ascoltat0/Desktop/Lab5/cmake/build_lin/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ascoltat0/Desktop/Lab5/cmake/build_lin/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ascoltat0/Desktop/Lab5/cmake/build_lin/demoserviced/CMakeFiles/demoserviced.dir
+/mnt/c/Users/ascoltat0/Desktop/Lab5/cmake/build_lin/demoserviced/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ascoltat0/Desktop/Lab5/cmake/build_lin/demoserviced/CMakeFiles/rebuild_cache.dir

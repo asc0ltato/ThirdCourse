@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CentralServer",
+    "version": "1.0"
+  },
+  "paths": {
+    "/CentralTelemetry/all": {
+      "get": {
+        "tags": [
+          "CentralTelemetry"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/CentralTelemetry/sources/status": {
+      "get": {
+        "tags": [
+          "CentralTelemetry"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/CentralTelemetry/sync-time": {
+      "post": {
+        "tags": [
+          "CentralTelemetry"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSinchroRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSinchroRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetSinchroRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GetSinchroRequest": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string",
+            "nullable": true
+          },
+          "curValue": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "tfG8JoPU87Gq04NTolfXnQLBTRvKlpAELDdUa60zQlk=",
+  "Source": "CentralServer",
+  "BasePath": "_content/CentralServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

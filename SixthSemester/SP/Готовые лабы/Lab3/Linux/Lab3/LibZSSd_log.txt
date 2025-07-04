@@ -1,0 +1,4 @@
+[07-04-2025 09:55:43] Library initialized.
+[07-04-2025 09:55:43] Library destroyed.
+[07-04-2025 09:57:33] Library initialized.
+[07-04-2025 10:05:43] Library destroyed.

@@ -1,0 +1,6 @@
+C:\Users\ascoltat0\Desktop\Lab1\Task3\build\CSharp-Project\Debug\Lab-01CS.exe
+C:\Users\ascoltat0\Desktop\Lab1\Task3\build\CSharp-Project\Debug\Lab-01CS.pdb
+C:\Users\ascoltat0\Desktop\Lab1\Task3\build\CSharp-Project\obj\x64\Debug\Lab-01CS.csproj.AssemblyReference.cache
+C:\Users\ascoltat0\Desktop\Lab1\Task3\build\CSharp-Project\obj\x64\Debug\Lab-01CS.csproj.CoreCompileInputs.cache
+C:\Users\ascoltat0\Desktop\Lab1\Task3\build\CSharp-Project\obj\x64\Debug\Lab-01CS.exe
+C:\Users\ascoltat0\Desktop\Lab1\Task3\build\CSharp-Project\obj\x64\Debug\Lab-01CS.pdb

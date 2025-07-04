@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Динамический эффект</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            margin-left: 20px;
+        }
+        img {
+            margin-left: 100px;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3 ease;
+        }
+        img:hover {
+            transform: scale(1.5);
+        }
+        .image {
+            display: none;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Динамические эффекты</h1>
+    <p>Наведи курсор на рисунок, чтобы изменить его размеры:</p>
+    <img src="C:\Users\super\Desktop\Экз\Web\Practice8\mef.jpg" alt="Пример1">
+
+    <p>Кликни на это <span id="dynamic-word">слово</span>, чтобы заменить его на рисунок(и обратно)</p>
+    <img id="dynamic-image" class="image" src="C:\Users\super\Desktop\Экз\Web\Practice8\mat.jpg" alt="Пример2">
+
+    <script>
+        var word = document.getElementById('dynamic-word');
+        var image = document.getElementById('dynamic-image');
+        word.addEventListener("click", () => {
+            if (word.style.display !== 'none') {
+                word.style.display = 'none';
+                image.style.display = 'inline';
+            } else {
+                word.style.display = 'inline';
+                image.style.display = 'none';
+            }
+        })
+
+        image.addEventListener('click', () => {
+            image.style.display = 'none';
+            word.style.display = 'inline';
+        })
+    </script>
+</body>
+</html>

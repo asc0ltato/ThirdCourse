@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 id="mode-header">Mode: @ViewBag.Mode</h1>
+
+<script>
+    document.addEventListener('keydown', function (event) {
+        if (event.ctrlKey && event.shiftKey && event.key === 'S') {
+            const secretKey = "Mode";
+
+            const form = document.createElement("form");
+            form.method = "post";
+            form.action = "/Home/SwitchMode";
+
+            const input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "accessKey";
+            input.value = secretKey;
+
+            form.appendChild(input);
+            document.body.appendChild(form);
+            form.submit();
+        }
+    });
+</script>
+
+@if (ViewBag.Mode == "guest")
+{
+    <form method="get" action="/Home/Index">
+        <input type="text" name="filterKeyword" value="@ViewBag.FilterKeyword" placeholder="Введите ключевое слово для фильтрации" />
+        <button type="submit">Фильтровать</button>
+    </form>
+}
+else
+{
+    <p>Вы в режиме владельца. Добро пожаловать!</p>
+
+    <form method="post" action="/Home/SwitchMode" style="display: inline;">
+        <input type="hidden" name="accessKey" value="guest" />
+        <button type="submit">Переключить в режим гостя</button>
+    </form>
+
+    <form method="get" action="/Home/Index">
+        <input type="text" name="filterKeyword" value="@ViewBag.FilterKeyword" placeholder="Введите ключевое слово для фильтрации" />
+        <button type="submit">Фильтровать</button>
+    </form>
+
+    <h3>Добавить новую ссылку</h3>
+    <form method="post" action="/Home/AddLink">
+        <input type="text" name="url" placeholder="http://url-useful-website-reference" required />
+        <input type="text" name="keywords" placeholder="key-word, key-word, ..." required />
+        <button type="submit">Добавить ссылку</button>
+    </form>
+}
+
+<h2>Список ссылок:</h2>
+<ul>
+    @foreach (var link in ViewBag.Links)
+    {
+        <li>
+            <div>
+                <a href="@link.Url" target="_blank">@link.Url</a> - @link.Keywords
+            </div>
+
+            @if (ViewBag.Mode == "owner")
+            {
+                <div>
+                    <form method="post" action="/Home/Vote" style="display: inline;">
+                        <input type="hidden" name="id" value="@link.Id" />
+                        <button type="submit" name="isUseful" value="true">Полезно</button>
+                        <button type="submit" name="isUseful" value="false">Бесполезно</button>
+                    </form>
+
+                    <p>Полезно: @link.UsefulCount</p>
+                    <p>Бесполезно: @link.UselessCount</p>
+                </div>
+
+                <form method="post" action="/Home/DeleteLink" style="display: inline;">
+                    <input type="hidden" name="id" value="@link.Id" />
+                    <button type="submit">Удалить</button>
+                </form>
+
+                <form method="post" action="/Home/EditLink" style="display: inline;">
+                    <input type="hidden" name="id" value="@link.Id" />
+                    <input type="text" name="url" value="@link.Url" required />
+                    <input type="text" name="keywords" value="@link.Keywords" required />
+                    <button type="submit">Изменить</button>
+                </form>
+            }
+
+            <div>
+                <form method="post" action="/Home/AddComment" style="display: inline;">
+                    <input type="hidden" name="linkId" value="@link.Id" />
+                    <input type="text" name="commentText" placeholder="Добавить комментарий" />
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+
+            <div>
+                <h4>Комментарии:</h4>
+                @foreach (var comment in link.Comments)
+                {
+                    <p>
+                        @comment.Text - <i>@comment.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")</i>
+                    </p>
+
+                    <form method="post" action="/Home/EditComment" style="display: inline;">
+                        <input type="hidden" name="commentId" value="@comment.Id" />
+                        <input type="text" name="newText" value="@comment.Text" required />
+                        <button type="submit">Изменить</button>
+                    </form>
+
+                    <form method="post" action="/Home/DeleteComment" style="display: inline;">
+                        <input type="hidden" name="commentId" value="@comment.Id" />
+                        <button type="submit">Удалить</button>
+                    </form>
+                }
+            </div>
+        </li>
+    }
+</ul>

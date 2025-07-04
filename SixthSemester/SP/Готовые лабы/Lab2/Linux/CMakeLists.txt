@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.30)
+project(Lab-02)
+set(EXECUTABE_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
+add_subdirectory(Lab-02d)
+add_subdirectory(Lab-02e)

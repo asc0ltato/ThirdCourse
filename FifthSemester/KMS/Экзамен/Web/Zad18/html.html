@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Задача 18</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #dialog {
+            position: fixed;
+            top: -200px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: none;
+        }
+
+        .slide-down {
+            animation: slideDown 1s forwards;
+        }
+        .slide-up {
+            animation: slideUp 1s forwards;
+        }
+        @keyframes slideDown {
+            from { top: -200px; }
+            to { top: 50%; }
+        }
+        @keyframes slideUp {
+            from { top: 50%; }
+            to { top: -200px; }
+        }
+    </style>
+</head>
+<body>
+    <button id="openDialogBtn">Открыть диалог</button>
+    <div id="dialog">
+        <p>Это диалоговое окно</p>
+        <button id="closeDialogBtn">Скрыть</button>
+    </div>
+
+    <script>
+        const openBtn = document.getElementById('openDialogBtn');
+        const closeBtn = document.getElementById('closeDialogBtn');
+        const dialog = document.getElementById('dialog');
+
+        openBtn.addEventListener('click', () => {
+            dialog.style.display = 'block';
+            dialog.classList.remove('slide-up');
+            dialog.classList.add('slide-down');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            dialog.classList.remove('slide-down');
+            dialog.classList.add('slide-up');
+            setTimeout(() => {
+                dialog.style.display = 'none';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

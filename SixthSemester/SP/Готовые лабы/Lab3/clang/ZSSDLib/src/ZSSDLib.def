@@ -1,0 +1,6 @@
+LIBRARY ZSSDLib
+
+EXPORTS
+    bsearch_i @1
+    recursive_search = bsearch_r @2
+    barray @3 NONAME

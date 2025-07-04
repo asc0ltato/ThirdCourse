@@ -1,0 +1,1 @@
+/usr/bin/clang "CMakeFiles/Lab-01C.dir/Lab-01C.c.o" -o Lab-01C

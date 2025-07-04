@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Задача 20</title>
+    <style>
+        #questionDialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="questionDialog">
+        <h3>Введите вопрос:</h3>
+        <input type="text" id="questionInput" />
+        <button id="askBtn">Спросить</button>
+        <div id="answerOutput"></div>
+    </div>
+    <button id="open">Задать вопрос</button>
+
+    <script>
+        const openDialog = document.getElementById('open');
+        const questionDialog = document.getElementById('questionDialog');
+        const askBtn = document.getElementById('askBtn');
+        const answerOutput = document.getElementById('answerOutput');
+
+        openDialog.addEventListener('click', () => {
+            questionDialog.style.display = 'block';
+        });
+        askBtn.addEventListener('click', () => {
+            const question = document.getElementById('questionInput').value;
+            if (question.trim() !== "") {
+                answerOutput.textContent = "Ответ на ваш вопрос: " + question;
+            } else {
+                answerOutput.textContent = "Вы не ввели вопрос.";
+            }
+        });
+    </script>
+</body>
+</html>

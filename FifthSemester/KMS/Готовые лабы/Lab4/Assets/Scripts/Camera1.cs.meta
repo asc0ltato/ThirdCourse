@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0822503a8bc359b4199264160cb14702
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - potolok: {fileID: 1080969918768624, guid: c15501bdc76926d42b9872c5b26c8813, type: 2}
+  - pol: {fileID: 1525659226787310, guid: 27e73518b3f9301448b7f1a60a4249f9, type: 2}
+  - stenaSleva: {fileID: 1681059131781192, guid: dec112e55e04e3a4c826cc78586ba7dd,
+      type: 2}
+  - stenaSprava: {fileID: 1233682196725484, guid: 9b3110eb54e8a4c47b4658c629532384,
+      type: 2}
+  - stenaSzadi: {fileID: 1347586547175562, guid: c9e1376c3371a504bae96661fafaa166,
+      type: 2}
+  - stenaSperedi: {fileID: 1377337324061004, guid: b59e4eb4d2339bf439feba8b3a96865d,
+      type: 2}
+  - centralObject: {fileID: 400984, guid: de111dc6ef0291146af764e177f6cca0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
